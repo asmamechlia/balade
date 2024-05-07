@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourisme Durable - Construction de Balade</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(243, 133, 1, 0.1);
+            color: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        h1 {
+            font-size: 5em;
+            font-family: Brush Script MT, Brush Script Std, cursive;
+            color: #1971B1;
+        }
+
+        .construction-form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-container {
+            background-color: rgba(248, 165, 32, 0.686);
+            border: 2px solid #F38501;
+            border-radius: 20px;
+            padding: 30px;
+            width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .form-container:hover {
+            transform: scale(1.05);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #F38501;
+        }
+
+        .btn-construire-balade {
+            background-color: #28a745; /* Couleur verte */
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-construire-balade:hover {
+            background-color: #28a745; /* Couleur verte */
+        }
+
+        .back-link {
+            color: #28a745;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 3em;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        .back-link:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Construction de Balade</h1>
+    </header>
+
+    <div class="form-container">
+        <form id="constructionForm">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" class="form-control" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date :</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="lieu">Lieu :</label>
+                <input type="text" class="form-control" id="lieu" name="lieu" required>
+            </div>
+            <div class="form-group">
+                <label for="prix">Prix par personne :</label>
+                <input type="number" class="form-control" id="prix" name="prix" required>
+            </div>
+            <button type="button" class="btn btn-construire-balade" onclick="construireBalade()">validation </button>
+        </form>
+    </div>
+
+    <div class="button-container">
+        <a href="index.html" class="back-link">
+            <span class="arrow">&larr;</span>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        function construireBalade() {
+            // Vous pouvez ajouter du code JavaScript pour traiter les données du formulaire
+            // Par exemple, récupérer les valeurs des champs et les envoyer vers le serveur
+            
+            // Redirigez vers validation.html après la construction de la balade
+            window.location.href = 'validation.html';
+        }
+    </script>
+
+</body>
+
+</html>

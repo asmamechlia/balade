@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourisme Durable</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(243, 133, 1, 0.1);
+            color: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        h1 {
+            font-size: 5em;
+            color: #1971B1;
+            font-family: Brush Script MT, Brush Script Std, cursive;
+        }
+
+        .services {
+            padding: 20px;
+            color: #000000;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #animated-images {
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+            white-space: nowrap;
+            border-radius: 10px;
+        }
+
+        .image-container {
+            display: inline-block;
+            margin: 0 10px;
+            animation: scrollImages 10s linear infinite;
+        }
+
+        @keyframes scrollImages {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .image-container img {
+            width: 150px;
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn-primary {
+            background-color: #28a745; /* Couleur verte */
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .btn-primary:hover {
+            background-color: #218838; /* Couleur verte plus foncée au survol */
+        }
+
+        .services-paragraph {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+        <h1>Tourisme Durable</h1>
+    </header>
+
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="services-paragraph">
+                                <u style="color:black;">Nos services</u> : Explorez notre sélection de balades en mer conçues pour offrir une expérience exceptionnelle dans le respect de la nature. Personnalisez votre aventure et découvrez des activités respectueuses de l'environnement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="animated-images">
+        <div class="image-container">
+            <img src="1.jpg" alt="Description image 1">
+        </div>
+        <div class="image-container">
+            <img src="2.jpg" alt="Description image 2">
+        </div>
+        <div class="image-container">
+            <img src="3.jpg" alt="Description image 3">
+        </div>
+        <div class="image-container">
+            <img src="4.jpg" alt="Description image 4">
+        </div>
+        <div class="image-container">
+            <img src="5.jpg" alt="Description image 5">
+        </div>
+        <div class="image-container">
+            <img src="6.jpg" alt="Description image 6">
+        </div>
+        <!-- Ajoutez plus d'images selon vos besoins -->
+    </section>
+
+    <div class="button-container">
+        <a href="liste_balades.html" class="btn btn-primary">Voir la liste des balades</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourisme Durable - Formulaire d'Inscription</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(243, 133, 1, 0.1); /* Couleur de fond avec opacité orange */
+            color: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        h1 {
+            font-size: 5em;
+            font-family: Brush Script MT, Brush Script Std, cursive;
+            color: #1971B1;
+        }
+
+        .inscription-form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-container {
+            background-color: rgba(248, 165, 32, 0.686); /* Couleur de fond avec opacité */
+            border: 2px solid #F38501; /* Bordure orange */
+            border-radius: 20px;
+            padding: 30px;
+            width: 400px; /* Ajuster la largeur selon vos besoins */
+            margin: 0 auto; /* Centrer horizontalement */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .form-container:hover {
+            transform: scale(1.05);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #F38501;
+        }
+
+        .btn-submit {
+            background-color: #28a745; /* Couleur verte */
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-submit:hover {
+            background-color: #218838; /* Couleur verte plus foncée au survol */
+        }
+
+        .back-link {
+            color: #28a745; /* Couleur verte */
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 3em; /* Ajustez la taille de la flèche */
+            margin-left: 50px; /* Marge à gauche pour positionner la flèche */
+            margin-top: 50px; /* Marge à gauche pour positionner la flèche */
+        }
+
+        .back-link .arrow {
+            margin-right: 10px;
+        }
+
+        .back-link:hover {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulaire d'Inscription</h1>
+    </header>
+
+    <div class="form-container" id="form-container">
+        <form id="inscription-form">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" class="form-control" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" class="form-control" id="prenom" name="prenom" required>
+            </div>
+            <div class="form-group">
+                <label for="numero">Numéro de téléphone :</label>
+                <input type="tel" class="form-control" id="numero" name="numero" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="nbrPersonnes">Nombre de personnes :</label>
+                <input type="number" class="form-control" id="nbrPersonnes" name="nbrPersonnes" required>
+            </div>
+            <button type="button" class="btn btn-submit" onclick="validerInscription()">Valider l'inscription</button>
+        </form>
+    </div>
+
+    <div class="button-container">
+        <a href="liste_balades.html" class="back-link">
+            <span class="arrow">&larr;</span>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        function validerInscription() {
+            // Ajoutez ici la logique de validation du formulaire
+            // Par exemple, redirigez vers la page de validation après la validation du formulaire
+            window.location.href = 'validation.html';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourisme Durable - Liste des Balades</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(243, 133, 1, 0.1); /* Couleur de fond avec opacité orange */
+            color: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        h1 {
+            font-size: 5em;
+            font-family: Brush Script MT, Brush Script Std, cursive;
+            color: #1971B1;
+        }
+
+        .services {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .balade-card {
+            border: 2px solid #F38501; /* Bordure orange */
+            border-radius: 20px;
+            margin: 20px;
+            padding: 30px;
+            background-color: rgba(248, 165, 32, 0.686); /* Couleur de fond avec opacité */
+            color: #ffffff;
+            width: 400px; /* Ajuster la largeur selon vos besoins */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .balade-card:hover {
+            transform: scale(1.05);
+        }
+
+        .balade-card h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .inscription-form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .build-balade-form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #28a745; /* Couleur verte */
+            color: #ffffff;
+        }
+
+        #liste-balades {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .back-link {
+            color: #28a745; /* Couleur verte */
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 3em; /* Ajustez la taille de la flèche */
+            margin-left: 50px; /* Marge à gauche pour positionner la flèche */
+            margin-top: 50px; /* Marge à gauche pour positionner la flèche */
+        }
+
+        .back-link:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Liste des Balades</h1>
+    </header>
+
+    <section id="liste-balades">
+        <!-- Cartes de balades -->
+        <div class="balade-card">
+            <h3>Nom de la balade 1</h3>
+            <p>Date: DD/MM/YYYY</p>
+            <p>Lieu: Nom du lieu 1</p>
+            <p>Prix par personne: XXXX</p>
+            <div class="inscription-form">
+                <button class="btn btn-success" onclick="location.href='formulaire.html'">S'inscrire</button>
+            </div>
+        </div>
+
+        <div class="balade-card">
+            <h3>Nom de la balade 2</h3>
+            <p>Date: DD/MM/YYYY</p>
+            <p>Lieu: Nom du lieu 1</p>
+            <p>Prix par personne: XXXX</p>
+            <div class="inscription-form">
+                <button class="btn btn-success" onclick="location.href='formulaire.html'">S'inscrire</button>
+            </div>
+        </div>
+
+        <div class="balade-card">
+            <h3>Nom de la balade 3</h3>
+            <p>Date: DD/MM/YYYY</p>
+            <p>Lieu: Nom du lieu 1</p>
+            <p>Prix par personne: XXXX</p>
+            <div class="inscription-form">
+                <button class="btn btn-success" onclick="location.href='formulaire.html'">S'inscrire</button>
+            </div>
+        </div>
+        <!-- Ajoutez plus de cartes selon vos besoins -->
+
+        <!-- Bouton pour construire votre propre balade -->
+        <div class="build-balade-form">
+            <button class="btn btn-primary" onclick="location.href='formulaire_construction_balade.html'">Construire votre propre balade</button>
+        </div>
+    </section>
+
+    <div class="button-container">
+        <a href="index.html" class="back-link">
+            <span class="arrow">&larr;</span>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
